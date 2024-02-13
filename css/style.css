@@ -1,0 +1,12 @@
+pre {
+  display:none;
+}
+
+iframe {
+  width:900px;
+  aspect-ratio:16/9;
+}
+
+img {
+  width:300px;
+}
