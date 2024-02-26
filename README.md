@@ -1,7 +1,9 @@
 # my personal homepage on the internet !
 
 ## for whom ?
-First and foremost → for me 🖐️ . As I'm passionate about the web and I like to design minimalist single page websites, I really need to have fun editing and publishing this page.
+> First and foremost → for me 🖐️ .
+
+As I'm passionate about the web and I like to design minimalist single page websites, I really need to have fun editing and publishing this page.
 
 Institutions, employers: this document need to be as clear as possible for the uneducated eye.
 
