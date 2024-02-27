@@ -17,10 +17,14 @@ a {
   cursor:crosshair;
   cursor:alias;
   cursor:pointer;
+  text-decoration:none;
 }
 
-img#ritf_img {
-  width:300px;
+a:visited {
+  color:blue;
+}
+
+.work {
   display:none;
   position:absolute;
   z-index:-1;
@@ -29,16 +33,20 @@ img#ritf_img {
   transition:filter 1s;
 }
 
-
+p {
+  /*background-color:white;*/
+  background:rgba(255,255,255,0.4);
+}
 
 #pre {
+  text-shadow:0 3px 1px lightgrey;
   position:relative;
     font-family: "Xanh Mono", monospace;
   font-family:monospace;
     font-family: "Cutive Mono", monospace;
   font-size:14pt;
   color:grey;
-  z-index:1 !important;
+  z-index:2 !important;
 }
 
 .tag {
@@ -102,6 +110,7 @@ h2.e {margin-left:calc(var(--indent)*2);}
 h2.e::before {content:"<h2>";
   text-transform:lowercase;
   font-weight:normal;
+  text-shadow:none;
 }
 h2.e::after {content:"</h2>";
   text-transform:lowercase;
@@ -110,7 +119,7 @@ h2.e::after {content:"</h2>";
 h2 {
   text-transform:uppercase;
   font-weight:bold;
-  text-shadow:0 3px 0 grey;
+  text-shadow:0 3px 1px lightgrey;
 }
 
 p.doctype::before {content:"<!DOCTYPE html>";}
@@ -139,6 +148,9 @@ div.body::after {
   margin-left:calc(var(--indent) * 2);
 content:"</body>";}
 
+p.p {
+  width:50%;
+}
 p.p {margin-left:calc(var(--indent) * 3);}
 p.p::before {content:"<p>";}
 p.p::after {content:"</p>";}

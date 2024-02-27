@@ -14,33 +14,64 @@ var icons = ["index","pager","die","meridian"];
 $(document).ready(function() {
 
   $('a').attr('target', '_blank');
-  
+
   /* Random favicon */
   var icon = icons[Math.floor(icons.length * Math.random())];
   icon = "./icons/"+icon + ".png";
 
   $("#fav").attr("href", icon);
 
-  $("#ritf").hover(function() {
-      var x = Math.floor(Math.random()*($(window).width()-$("#ritf_img").width()));
-      var y = Math.floor(Math.random()*($(window).height()-$("#ritf_img").height()));
-      $("#ritf_img").css({transition:"none",opacity:1,left:x, top:y, filter:"blur(0px)"}).show();
-    },
-    function() {
-      $("#ritf_img").css({transition:"all 1s",opacity:0,filter:"blur(10px)"});
-      //$("#ritf_img").fadeOut(1000);
-      //$("#ritf_img").fadeOut(1000);
-    }
-  );
+  /* TITLES */
+
+  var iconImg = $('<img>').attr({
+    src: icon,
+    width: 20
+  });
+
+  $(".title").html("");
+  $(".title").append(iconImg)
+  $(".title").append(" martin's world - "+getTime());
+
+
+  setInterval(function(){
+    $("title").text("martin's world - "+getTime());
+
+    $(".title").html("");
+    $(".title").append(iconImg)
+    $(".title").append(" martin's world - "+getTime());
+  }, 1000);
+
+  /* IMG HOVER */
+  imgHover("#algo");
+  imgHover("#ritf");
+  imgHover("#sylvain");
+  imgHover("#madeleine");
+  imgHover("#nico");
+  imgHover("#raphaelle");
+  imgHover("#marc");
+  imgHover("#grf");
 });
 
+function imgHover(id) {
 
-$("title").text(getTime());
+  $(id).hover(function() {
+    var x = Math.floor(Math.random()*($(window).width()-$(id+"_img").width()));
+    var y = Math.floor(Math.random()*($(window).height()-$(id+"_img").height()));
 
-setInterval(function(){
-  $("title").text(getTime());
-}, 1000);
+    var size = Math.floor(Math.random() * (700 - 500 + 1)) + 500;
+    $(id+"_img").css({width:size});
+    $(id+"_img").css({transition:"none",opacity:1,left:x, top:y, filter:"blur(0px)"}).show();
+  },
+    function() {
+      setTimeout(
+	function()
+	{
+	  $(id+"_img").css({transition:"all 3s",opacity:0.3,filter:"blur(10px)"});
+	}, 3500);
+    }
 
+  );
+}
 
 function getTime() {
   var dt = new Date();
