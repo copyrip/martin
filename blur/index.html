@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <span class="invisible">lorem ipsum</span><span class="visible">et compagnie</span>
+  </body>
+</html>
+<style>
+.invisible {filter:blur(1px)}
+span.visible::before {content:'<span>'}
+span.visible::after {content:'</span>'}
+</style>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pomodoro Timer</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+  }
+  #timer {
+    font-size: 2em;
+    margin-top: 20vh;
+  }
+</style>
+</head>
+<body>
+
+<div id="timer">25:00</div>
+<button id="start">Start</button>
+<button id="reset">Reset</button>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+$(document).ready(function() {
+  var timer;
+  var timeLeft = 1500; // 25 minutes in seconds
+
+  function startTimer() {
+    timer = setInterval(function() {
+      var minutes = Math.floor(timeLeft / 60);
+      var seconds = timeLeft % 60;
+      $('#timer').text(minutes + ':' + (seconds < 10 ? '0' : '') + seconds);
+      if (timeLeft === 0) {
+        clearInterval(timer);
+        alert('Time\'s up!');
+      }
+      timeLeft--;
+    }, 1000);
+  }
+
+  $('#start').click(function() {
+    startTimer();
+    $(this).prop('disabled', true);
+  });
+
+  $('#reset').click(function() {
+    clearInterval(timer);
+    timeLeft = 1500;
+    $('#timer').text('25:00');
+    $('#start').prop('disabled', false);
+  });
+});
+</script>
+
+</body>
+</html>
+

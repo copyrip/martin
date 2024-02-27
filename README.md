@@ -11,3 +11,9 @@ Friends, peers: this document needs to be fun for other geeks like me !
 
 ## on mobile
 as I don't really care for mobile first users, I will display a short notice to explain that the website is better viewed on desktop.
+
+
+* raphaelle
+* gabriel
+* sylvain
+* marius, sarah

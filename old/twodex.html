@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Description">
+    <meta name="author" content="martin@copyright.rip">
+
+    <title>Martin's World</title>
+
+    <link rel="icon" id="fav" href="icons/index.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="css/style.css">
+<style>
+pre {
+  display:block;
+  white-space:pre-wrap;
+}
+/*
+pre {
+  color:grey;
+  filter:blur(1px);
+  z-index:0;
+}
+pre span {
+  position:absolute;
+  color:black;
+  filter:none !important;
+  z-index:1;
+}
+ */
+
+pre {
+  position: relative;
+  color:grey;
+}
+
+pre::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  filter: blur(4px); /* Adjust the blur strength as needed */
+  z-index: -1;
+}
+
+	/* random */
+
+pre#random {
+  color:#000;
+  font-size:6px;
+}
+</style>
+  </head>
+  <body>
+    <pre>
+&lt;html lang="<span>en</span>"&gt;
+&lt;head&gt;
+	&lt;title&gt;<span>⓪</span>&lt;/title&gt;
+	&lt;meta name="<span>author</span>" content="<span>martin@copyright.rip</span>"&gt;
+
+	&lt;style&gt;
+	* {
+		font-family:<span>①</span>;
+	}
+	&lt;/style&gt;
+&lt;head&gt;
+&lt;body&gt;
+	&lt;h1&gt;<span>Hello world !</span>&lt;/h1&gt;
+	&lt;p&gt;<span>Welcome to my website ! It might seem a bit austere, but make yourself at home.</span>&lt;/p&gt;
+
+	&lt;h1&gt;<span>my friends over the (cyber) world</span>&lt;/h1&gt;
+	&lt;ul&gt;
+		&lt;li&gt;&lt;a href="<a href="sylvain.copyright.rip">sylvain.copyright.rip</a>"&gt;👾&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href="<a href="grf.copyright.rip">grf.copyright.rip</a>"&gt;👾&lt;/a&gt;&lt;/li&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+
+
+    </pre>
+<!--
+¥€$, I can help you build a website. But you can start by copy pasting into a text editor, modify some stuff, save the file and open it into a webbrowser such as firefox !
+    <pre id="random" width="80"></pre>
+    <pre id="ascii">
+░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
+░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
+░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
+▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒
+▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒
+▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒
+▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒
+▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓
+▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓
+▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓
+▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓
+   
+    </pre>
+    -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/script.js">
+    </script>
+    <script>
+      /*
+      var r = $("#random");
+      for(var i = 0;i < 10000;i++){
+	i % 300 == 0 ? 
+	r.append("\n"):
+	r.append("");
+
+	Math.random() > 0.5 ?
+	r.append("X"):
+	r.append(" ");
+      }
+      */
+
+    </script>
+  </body>
+</html>
+
