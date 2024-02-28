@@ -17,7 +17,7 @@ $(document).ready(function() {
 
   /* Random favicon */
   var icon = icons[Math.floor(icons.length * Math.random())];
-  icon = "./icons/"+icon + ".png";
+  icon = "./img/"+icon + ".png";
 
   $("#fav").attr("href", icon);
 

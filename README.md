@@ -13,6 +13,12 @@ Friends, peers: this document needs to be fun for other geeks like me !
 as I don't really care for mobile first users, I will display a short notice to explain that the website is better viewed on desktop.
 
 
+## infos 
+* where am I ?
+* contact me ?
+* what am I doing ?
+* find me elsewhere
+
 * raphaelle
 * gabriel
 * sylvain
