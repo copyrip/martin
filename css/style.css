@@ -121,6 +121,16 @@ h2 {
   font-weight:bold;
   text-shadow:0 3px 1px lightgrey;
 }
+h3.e {margin-left:calc(var(--indent)*2);}
+h3.e::before {content:"<h3>";
+  text-transform:lowercase;
+  font-weight:normal;
+  text-shadow:none;
+}
+h3.e::after {content:"</h3>";
+  text-transform:lowercase;
+  font-weight:normal;
+}
 
 p.doctype::before {content:"<!DOCTYPE html>";}
 

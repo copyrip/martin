@@ -42,6 +42,7 @@ $(document).ready(function() {
   }, 1000);
 
   /* IMG HOVER */
+  /*
   imgHover("#algo");
   imgHover("#ritf");
   imgHover("#sylvain");
@@ -50,6 +51,7 @@ $(document).ready(function() {
   imgHover("#raphaelle");
   imgHover("#marc");
   imgHover("#grf");
+  */
 });
 
 function imgHover(id) {
