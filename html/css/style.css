@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500;700&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Xanh+Mono&display=swap');
+
+/*   MARTIN RESUME
+ *   ------------- 
+ *   
+ *   0. utils
+ *   	* dark mode
+ *   	* rules
+ *   1. layout
+ *   1. whites
+ *   2. header
+ *
+ *
+ */
+
+/* --- 0. utils --- */
+.dark {
+  color:#fff;
+  background:#000;
+}
+
+.rules {
+  position:absolute;
+  background:#EEE;
+}
+
+.horizontal {
+  width:100%;
+  height:1px;
+}
+
+.vertical {
+  width:1px;
+  height:100%;
+}
+
+.rules.top {
+  top:24px;
+  right:0;
+}
+
+.rules.bottom {
+  top:297mm;
+  right:0;
+  margin-top:24px;
+}
+
+.rules.left {
+  height:370mm;
+  top:0;
+  left:30px;
+}
+
+.rules.right {
+  min-height:120%;
+  top:0;
+  left:210mm;
+  margin-left:30px;
+}
+
+/* --- 1. layout --- */
+
+html {
+  
+  padding: 24px 30px 0 30px;
+}
+
+body {
+  box-sizing:border-box;
+
+  width:210mm;
+  aspect-ratio:1/1.41;
+  height:297mm;
+
+  max-width:210mm;
+  max-height:297mm; 
+
+
+  display:flex;
+
+
+  margin-bottom:100px;
+}
+
+#sidebar {
+  box-sizing:border-box;
+  min-width:70mm;
+  max-width:70mm;
+  height:100%;
+
+  padding: 4px 8px 0 8px;
+  /*background:red !important;*/
+  overflow:hidden;
+}
+
+#langs li {
+  display:inline-block;
+  font-family:monospace;
+  font-size:10pt;
+
+  color:#fff;
+
+  background:lightblue;
+  border-radius:10px;
+  margin-right:8px;
+
+  padding: 0px 8px;
+
+}
+
+#langs li:after {
+  /*
+  content:",\00a0";
+  */
+}
+
+#langs li:last-child:after {
+  /*
+  content:".";
+  */
+}
+
+#content {
+  padding: 4px 8px 0 8px;
+}
+
+label {
+  cursor:pointer;
+}
+/* --- 2. colors --- */
+html {
+  background-color:rgba(0,0,0,0.1);
+  background-color:rgba(255,255,255,1);
+}
+
+body {
+  background-color:rgba(255,255,255,1);
+}
+
+#sidebar {
+  background:lightgrey;
+  background:white;
+}
+
+a, a:visited {
+  color:#00FF;
+  text-decoration:none;
+}
+
+a:hover {
+  text-decoration:underline;
+}
+
+/* --- 2. typography --- */
+
+body {
+  line-height:18pt;
+  font-size:12pt;
+
+  font-family: serif;
+  font-family: "Coupeur Monospace", monospace;
+  font-family: "Xanh Mono", monospace;
+  font-family: "IBM Plex Mono", monospace;
+  font-family: "IBM Plex Serif", serif;
+  font-family: "Liberation Serif", cursive;
+  font-family: "Redaction 20", cursive;
+  font-size:14pt;
+}
+
+h1 {
+  font-size:12pt;
+  font-weight:bold;
+}
+
+footer {
+  position:absolute;
+  bottom:0;
+
+  font-family: "Xanh Mono", monospace;
+}
+
+/* --- */
+
+ul {
+  font-size:0;
+  margin-left:0;
+  margin:0;
+  list-style:none;
+}
+
+ul li {
+  font-size:12pt;
+  margin: 0 0 0 0; 
+}
+
+
+ul li dt span {
+  background:#DDD;
+  color:#111;
+
+  font-size:7pt;
+
+  border-radius:10px;
+  padding: 1px 2px;
+  margin: 0 4px 0 0;
+
+
+  vertical-align:center;
+}
+
+form {
+  margin: 0 0 0 0;
+}
+
+.screen {
+  display:inline;
+}
+.print {
+  display:none;
+}
+
+
+/* === to sort === */
+#comp {
+  width:15mm;
+}
+
+/* ==== PRINTING ==== */
+
+@media print {
+  html {
+    padding:0;
+  }
+
+  .rules {
+    display:none;
+  }
+
+  .screen {
+    display:none;
+  }
+  .print {
+    display:inline;
+  }
+}
+
