@@ -1,3 +1,16 @@
+# martin
+
+* resume in markdown ? useless
+
+## to do
+* [ ] csv → page
+
+<!--
+- souper show
+- alex ayed
+- harald et jos
+- fablab orange
+
 Martin Campillo
 ===============
 

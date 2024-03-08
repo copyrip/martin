@@ -19,18 +19,23 @@ $(document).ready(function(){
 
 
   /* more infos */
- 
-$('dt + dd').prev('dt').append('<span>&rarr;</span>');
-  
+
+  $('dt + dd').prev('dt').append('<span>&rarr;</span>');
+
   $("ul li dd").hide(); 
 
-  $("ul li dt").mouseenter(function(){
-    $(this).next().slideDown(5);
+  $("ul li dt").click(function(){
+    $("#pics").prepend("<img src=\"./img/"+$(this).attr("img")+"\">");
   });
 
+  $("ul li dt").click(function(){
+    $(this).next().slideDown(5);
+  });
+/*
   $("ul li dt").mouseleave(function(){
     $(this).next().slideUp(3);
   });
+  */
 
 
   /* sorting */
@@ -51,12 +56,20 @@ function display(c,is){
 
 function updateDate(){
   var dt = new Date();
-  $("#date #day").text(dt.getDate());
-  $("#date #month").text(dt.getMonth() + 1);
+  dt.getDate() > 9 ?
+    $("#date #day").text(dt.getDate())		:
+    $("#date #day").text('0'+dt.getDate())	;
+  dt.getMonth() > 9 ?
+    $("#date #month").text(dt.getMonth() + 1)		:
+    $("#date #month").text('0'+(dt.getMonth() + 1))	;
   $("#date #year").text(dt.getFullYear());
 
-  $("#date .hours").text(dt.getHours());
-  $("#date .minutes").text(dt.getMinutes());
+  dt.getHours() > 9 ?
+    $("#date .hours").text(dt.getHours())	:
+    $("#date .hours").text('0'+dt.getHours())	;
+  dt.getMinutes() > 9 ?
+    $("#date .minutes").text(dt.getMinutes())		:
+    $("#date .minutes").text('0'+dt.getMinutes())	;
   dt.getSeconds() > 9 ?
     $("#date .seconds").text(dt.getSeconds()):
     $("#date .seconds").text('0'+dt.getSeconds());
