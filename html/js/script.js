@@ -20,7 +20,7 @@ $(document).ready(function(){
 
   /* more infos */
 
-  $('dt + dd').prev('dt').append('<span>&rarr;</span>');
+  $('dt + dd').prev('dt').append(' <span class="more">&rarr;</span>');
 
   $("ul li dd").hide(); 
 
@@ -29,7 +29,9 @@ $(document).ready(function(){
   });
 
   $("ul li dt").click(function(){
-    $(this).next().slideDown(5);
+    $(this).next().toggle();
+
+    $(this).children(".more").text() === '→' ? $(this).children(".more").text('↓'):$(this).children(".more").text('→');
   });
 /*
   $("ul li dt").mouseleave(function(){

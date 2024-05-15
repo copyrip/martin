@@ -23,6 +23,10 @@
 
 /* --- 0. utils --- */
 
+#langs, #badges {
+  display:none;
+}
+
 .dark {
   color:#fff;
   background:#000;
@@ -143,9 +147,13 @@ body {
   flex-direction:column;
 }
 
+#content p {
+  margin-bottom:12px;
+}
+
 #all {
   flex:1;
-  margin-top:25mm;
+  margin-top:1mm;
 }
 
 label {
@@ -180,6 +188,10 @@ a:hover {
 
 /* --- 2. typography --- */
 
+p:nth-child(2) {
+  text-indent:15pt;
+}
+
 b {
   font-family:bold;
 }
@@ -207,10 +219,38 @@ h1 {
 
 footer {
   bottom:0;
- gg
-
   font-family: "Xanh Mono", monospace;
 }
+
+li.h {
+  font-family:"Redaction 50", cursive;
+  font-size:16pt !important;
+  border:0px solid black;
+  padding:5px 10px;
+
+  display:inline-block;
+
+  margin-bottom:20px;
+  margin-top:30px;
+}
+
+dt {
+  font-size:14pt;
+}
+
+dd {
+  font-family:"Coupeur Monospace", monospace;
+}
+
+p {
+  font-size:14pt;
+}
+
+#bank li{
+  font-size:10pt;
+  line-height:12pt;
+}
+
 
 /* --- */
 
@@ -226,15 +266,20 @@ ul li {
   margin: 0 0 0 0; 
 }
 
+ul li dt {
+  cursor:pointer;
+}
+
 
 ul li dt span {
   background:#DDD;
   color:#111;
 
   font-size:7pt;
+  font-family:"Redaction", cursive;
 
   border-radius:10px;
-  padding: 1px 2px;
+  padding: 3px 6px;
   margin: 0 4px 0 0;
 
 

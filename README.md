@@ -10,3 +10,10 @@
 * grille sudoku
 * grille codename
 
+## MVP
+
+* enseignant
+* infos libibles
+* multy page
+* better typo
+* no generate tips and stuff
