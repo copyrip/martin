@@ -104,8 +104,8 @@ body {
 
 #sidebar {
   box-sizing:border-box;
-  min-width:70mm;
-  max-width:70mm;
+  min-width:52mm;
+  max-width:52mm;
   height:100%;
 
   padding: 4px 8px 0 8px;
@@ -189,7 +189,6 @@ a:hover {
 /* --- 2. typography --- */
 
 p:nth-child(2) {
-  text-indent:15pt;
 }
 
 b {
@@ -240,6 +239,11 @@ dt {
 
 dd {
   font-family:"Coupeur Monospace", monospace;
+  font-family:Arial, sans-serif;
+  font-size:10pt;
+  line-height:12pt;
+
+  margin-bottom:3mm;
 }
 
 p {
@@ -251,6 +255,8 @@ p {
   line-height:12pt;
 }
 
+span.more {
+}
 
 /* --- */
 
@@ -320,13 +326,14 @@ form {
   .print {
     display:inline;
   }
-
+/*
   #badges img {
     filter:grayscale(100%) contrast(900%);
   }
 	li {
 	filter:grayscale(100%);
 }
+*/
 }
 
 /* === dark mode === */
