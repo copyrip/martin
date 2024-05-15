@@ -24,7 +24,7 @@
 /* --- 0. utils --- */
 
 #langs, #badges {
-  display:none;
+  /*display:none;*/
 }
 
 .dark {
@@ -116,12 +116,12 @@ body {
 #langs li {
   display:inline-block;
   font-family:monospace;
-  font-size:10pt;
+  font-weight:bolder;
+  font-size:9pt;
 
   color:#fff;
 
-  background:grey;
-  background:blue;
+  background-color:rgba(0,0,255,1);
   border-radius:10px;
   margin-right:8px;
 
@@ -139,6 +139,11 @@ body {
   /*
   content:".";
   */
+}
+
+#bank {
+  margin-top:20px;
+  margin-bottom:190px;
 }
 
 #content {
@@ -192,7 +197,10 @@ p:nth-child(2) {
 }
 
 b {
-  font-family:bold;
+  font-family:"monospace";
+  font-weight:bold;
+  font-style:italic;
+  font-size:90%;
 }
 
 body {
@@ -212,7 +220,7 @@ body {
 }
 
 h1 {
-  font-size:12pt;
+  font-size:14pt;
   font-weight:bold;
 }
 
@@ -223,14 +231,16 @@ footer {
 
 li.h {
   font-family:"Redaction 50", cursive;
-  font-size:16pt !important;
+  font-size:14pt !important;
+  /*
   border:0px solid black;
   padding:5px 10px;
+  */
 
   display:inline-block;
 
-  margin-bottom:20px;
-  margin-top:30px;
+  margin-bottom:10px;
+  margin-top:10px;
 }
 
 dt {
@@ -251,7 +261,7 @@ p {
 }
 
 #bank li{
-  font-size:10pt;
+  font-size:9pt;
   line-height:12pt;
 }
 

@@ -20,9 +20,9 @@ $(document).ready(function(){
 
   /* more infos */
 
-  $('dt + dd').prev('dt').append(' <span class="more">&rarr;</span>');
+  //$('dt + dd').prev('dt').append(' <span class="more">&rarr;</span>');
 
-  $("ul li dd").hide(); 
+  //$("ul li dd").hide(); 
 
   $("ul li dt").click(function(){
     $("#pics").prepend("<img src=\"./img/"+$(this).attr("img")+"\">");
