@@ -53,6 +53,7 @@
 }
 
 .rules.bottom {
+  display:none;
   top:297mm;
   right:0;
   margin-top:24px;
@@ -161,6 +162,10 @@ body {
   margin-top:1mm;
 }
 
+#all li {
+  margin-top:15px;
+}
+
 label {
   cursor:pointer;
 }
@@ -199,7 +204,6 @@ p:nth-child(2) {
 b {
   font-family:"monospace";
   font-weight:bold;
-  font-style:italic;
   font-size:90%;
 }
 
@@ -241,6 +245,7 @@ li.h {
 
   margin-bottom:10px;
   margin-top:10px;
+  margin-left:35px;
 }
 
 dt {
@@ -281,6 +286,8 @@ ul li {
   font-size:12pt;
   margin: 0 0 0 0; 
 }
+
+
 
 ul li dt {
   cursor:pointer;

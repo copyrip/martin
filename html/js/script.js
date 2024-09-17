@@ -29,6 +29,9 @@ $(document).ready(function(){
   });
 
   $("ul li dt").click(function(){
+    $("a").click(function(){
+      return true;
+     });
     $(this).next().toggle();
 
     $(this).children(".more").text() === '→' ? $(this).children(".more").text('↓'):$(this).children(".more").text('→');
